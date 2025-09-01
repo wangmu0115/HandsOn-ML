@@ -5,4 +5,4 @@ conda create -n handsonml python=3.12
 
 conda activate handsonml
 
-pip install jupyter numpy pandas matplotlib scikit-learn
+pip install jupyter numpy pandas matplotlib ipympl scikit-learn
