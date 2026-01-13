@@ -40,6 +40,40 @@ $$
 
 单层感知机只能表示线性空间，而多层感知机可以表示非线性空间。
 
+```mermaid
+---
+config:
+  theme: "neutral"
+---
+graph LR
+    subgraph InputLayer [输入层]
+        x1((x₁))
+        x2((x₂))
+    end
+
+    subgraph HiddenLayer [隐藏层 - 第一层计算]
+        nand["NAND 节点<br>z₁ = ¬(x₁∧x₂)<br>权重: ?, 偏置: ?"]
+        or["OR 节点<br>z₂ = x₁∨x₂<br>权重: ?, 偏置: ?"]
+    end
+
+    subgraph OutputLayer [输出层 - 第二层计算]
+        and["AND 节点<br>y = z₁∧z₂<br>权重: ?, 偏置: ?"]
+    end
+
+    x1 --> nand
+    x2 --> nand
+    x1 --> or
+    x2 --> or
+
+    nand --> and
+    or --> and
+
+    and --> output((输出 y))
+
+    style HiddenLayer fill:#f0f9ff,stroke:#3498db
+    style OutputLayer fill:#f0f9ff,stroke:#2ecc71
+```
+
 
 ### 神经网络
 
