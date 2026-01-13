@@ -11,6 +11,24 @@ graph LR
     x2(("$$x_2$$")) --> |"$$w_2$$"| y((""$$y$$""))
 ```
 
+```mermaid
+graph LR
+    subgraph InputLayer [输入层]
+        x1(("x₁"))
+        x2(("x₂"))
+    end
+
+    x1 -- "w₁" --> Sum{∑}
+    x2 -- "w₂" --> Sum
+
+    Sum --> a["a = ∑(wᵢ xᵢ) + b<br>$$a = \sum_{i=1}^{2} w_i x_i + b$$"]
+    a --> sigma["激活函数 σ"]
+    sigma --> y["输出 y<br>$$y = \sigma(a)$$"]
+
+    style a fill:#e1f5fe
+    style sigma fill:#f3e5f5
+    style y fill:#e8f5e8
+```
 
 1957 年 Frank Rosenblatt 首次提出了感知机 **perceptron** 算法，是神经网络的起源算法。感知机接收多个输入信号，输出一个信号，信号的取值为 `0` 和 `1`，分别表示不传递和传递信号，下图展示了两个输入和一个输出的感知机示例，$w_1$和$w_2$是权重。
 
