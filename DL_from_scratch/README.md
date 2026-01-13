@@ -1,5 +1,7 @@
 ## 1. 感知机 perceptron
 
+**感知机** <span style="color:grey">perceptron</span> 算法是由 Frank Rosenblatt 于 1957 年
+
 
 1957 年 Frank Rosenblatt 首次提出了感知机 **perceptron** 算法，是神经网络的起源算法。感知机接收多个输入信号，输出一个信号，信号的取值为 `0` 和 `1`，分别表示不传递和传递信号，下图展示了两个输入和一个输出的感知机示例，$w_1$和$w_2$是权重。
 
