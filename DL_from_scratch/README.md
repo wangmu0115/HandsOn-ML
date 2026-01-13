@@ -3,6 +3,7 @@
 **感知机** <font color="gray">perceptron</font> 算法是由 Frank Rosenblatt 于 1957 年首次提出，是神经网络的起源算法，感知机接收多个输入信号并输出一个信号，信号的取值为 `0` 和 `1`。
 
 ```mermaid
+%%{init: {"theme":"default","math":{"enabled":true}}}%%
 ---
 title: Perceptron
 ---
