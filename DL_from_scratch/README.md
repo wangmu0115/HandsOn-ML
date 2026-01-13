@@ -12,6 +12,10 @@ graph LR
 ```
 
 ```mermaid
+info
+```
+
+```mermaid
 graph LR
     subgraph InputLayer [输入层]
         x1(("x₁"))
